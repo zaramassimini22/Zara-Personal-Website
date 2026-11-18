@@ -12,7 +12,7 @@
 
 <nav class="nav">
   <div class="nav-inner">
-    <a class="brand" href="index.html">Zara Massimini<span class="dot">.</span></a>
+    <a class="brand" href="index.html"><img src="Assets/logo.png" alt="Zara Massimini" width="480" height="263"></a>
     <div class="nav-links">
       <a href="index.html">Home</a>
       <a href="work.html" class="active">Industrial Design</a>
@@ -36,10 +36,85 @@
 <section class="section" style="padding-top:60px">
   <div class="wrap">
 
-    <!-- ROCKET REVIVE -->
-    <article class="proj reveal" id="rocket-revive">
+    <!-- PROJECT CARDS (click to open details) -->
+    <div class="mini-grid">
+      <a class="mini feature reveal" href="#capstone">
+        <div class="ph"><img src="Assets/perla-hero.jpg" alt="Perlaform, a bathing system for one pair of hands: a mother bathing her baby in the orange spiral baby bath"></div>
+        <div class="tx"><span class="cat">Project 01 · Capstone · Latest</span><div class="t">Perlaform</div><div class="d">A nautilus shell inspired baby bath for single mothers recovering from childbirth. It holds the baby, keeps washing essentials within reach and empties without being lifted: a bathing system for one pair of hands.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal" href="#rocket-revive">
+        <div class="ph"><img src="assets/rr-final.jpg" alt="Rocket Revive naloxone carrier"></div>
+        <div class="tx"><span class="cat">Project 02 · Harm reduction</span><div class="t">Rocket Revive</div><div class="d">A wearable naloxone carrier that turns overdose response into a bold festival accessory, so more people actually carry it.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal d1" href="#adracard">
+        <div class="ph"><img src="assets/adra-hero.jpg" alt="AdraCard tooled-leather adrenaline pouch"></div>
+        <div class="tx"><span class="cat">Project 03 · Wearable carry</span><div class="t">AdraCard</div><div class="d">A leather adrenaline pouch designed to disappear into festival fashion, so auto-injectors stop getting left at home.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal d2" href="#angle-grinder">
+        <div class="ph"><img src="assets/grinder-hero.jpg" alt="Fijn angle grinder concept render"></div>
+        <div class="tx"><span class="cat">Project 04 · Hand tools</span><div class="t">Fijn Angle Grinder</div><div class="d">An ergonomic angle grinder for the Fijn tool range, refined through teardown, user interviews and clay and 3D-printed prototypes.</div><span class="more">View project</span></div>
+      </a>
+    </div>
+
+    <!-- CAPSTONE: PERLAFORM -->
+    <dialog class="proj-modal" id="capstone" aria-label="Perlaform">
+    <div class="modal-bar"><button class="modal-close" aria-label="Close">×</button></div>
+    <article class="proj">
       <div class="proj-top">
-        <div><span class="num">Project 01</span><h2>Rocket Revive</h2></div>
+        <div><span class="num">Project 01 · Capstone</span><h2>Perlaform</h2></div>
+        <div class="proj-tags"><span class="chip">Postpartum</span><span class="chip">Biomimicry</span><span class="chip">Humanitarian design</span></div>
+      </div>
+      <div class="proj-cover"><img src="Assets/perla-hero.jpg" alt="Perlaform, a bathing system for one pair of hands: a mother bathing her baby in the orange spiral baby bath"></div>
+      <div class="proj-body">
+        <div>
+          <h4>The challenge</h4>
+          <p>How might we design accessible support that helps single mothers in Melbourne during the first six months? 79% of Australian single-parent families are headed by mothers (ABS 2025). Bathing a newborn looks simple, but it means supporting a slippery baby, managing water and reaching for essentials while keeping a constant eye on them, often with only one hand free and a body still recovering from childbirth. Most baby baths are designed around the baby, with little thought for the person bathing them.</p>
+          <h4>Designing for supervision</h4>
+          <p>A twelve-year Australian review identified 78 child bathtub drownings; 43.6% involved children under one, and every one of those children had been left unsupervised. I learnt that a more “supportive” bath can make it easier to justify looking away, so the goal was never a bath that needs less supervision, but one that makes supervision easier to give.</p>
+          <h4>A bath doesn’t need to look like a bath</h4>
+          <p>The project began with postpartum women in Timor-Leste before research and feedback refocused it on single mothers in Melbourne. When feedback said my design still looked like a traditional tub, I turned to biomimicry and the nautilus shell, sanding back broken shells to study the spiral inside. The spiral creates different depths within one continuous form, a natural drainage point and integrated storage, turning wasted space into something functional.</p>
+          <h4>The final design</h4>
+          <p>Perlaform curves around the mother’s body and can be used on the floor, a bed, a benchtop, a table, in the shower or in a bathtub. A zip-up spacer-mesh insert with neck contouring cushions the baby and drains through. Storage shelving sits within reach and drains back into the bath, a lever drain empties it in place, and a max-water-height hole stops it filling too high. Colour-matched rims give visual cues for placement, temperature-sensitive grips change colour if the water is too hot, and a koi-inspired scoop pours a gentle stream.</p>
+          <h4>Making it</h4>
+          <p>I moved from sketches and clay models to Fusion 360, where a printed study model showed my slanted benchtop base was unstable. A full-scale chicken-wire and papier-mâché mock-up let me body-storm kneeling, sitting cross-legged and standing at a bench, which led me to raise the rim, open the inner curl and shorten the bath. I tested a gel beanbag, EVA foam, neoprene and spacer mesh for the insert, and simplified a spring-loaded drain into a lever. The final model was printed in 10 segments by DFab, pinned and bonded with epoxy, then filled, sanded and hand-painted.</p>
+        </div>
+        <aside class="proj-aside">
+          <div class="row"><div class="k">Context</div><div class="v">IDN3002 · Capstone, Monash University</div></div>
+          <div class="row"><div class="k">Users</div><div class="v">Single mothers in postpartum recovery · babies 0–6 months</div></div>
+          <div class="row"><div class="k">Role</div><div class="v">Research, concept, CAD, prototyping, fabrication, finishing</div></div>
+          <div class="row"><div class="k">Methods</div><div class="v">Expert interview · market scoping · clay &amp; 1:1 mock-ups · body storming · Fusion 360 · large-format 3D printing</div></div>
+          <div class="row"><div class="k">Production intent</div><div class="v">Injection moulding, with some parts possibly rotationally moulded</div></div>
+        </aside>
+      </div>
+
+      <h4 class="gallery-label">Final model</h4>
+      <div class="gallery grid3">
+        <a href="Assets/perla-final.jpg" target="_blank"><img src="Assets/perla-final.jpg" alt="Finished Perlaform with baby doll on the insert and red koi scoop" loading="lazy"></a>
+        <a href="Assets/perla-use.jpg" target="_blank"><img src="Assets/perla-use.jpg" alt="Mother and baby sitting beside Perlaform" loading="lazy"></a>
+        <a href="Assets/perla-top.jpg" target="_blank"><img src="Assets/perla-top.jpg" alt="Perlaform from above showing the spiral and textured base" loading="lazy"></a>
+        <a href="Assets/perla-scoop.jpg" target="_blank"><img src="Assets/perla-scoop.jpg" alt="Hand lifting the red koi water scoop from its holder" loading="lazy"></a>
+        <a href="Assets/perla-cover.jpg" target="_blank"><img src="Assets/perla-cover.jpg" alt="Unzipping the washable spacer-mesh insert cover" loading="lazy"></a>
+        <a href="Assets/perla-insert.jpg" target="_blank"><img src="Assets/perla-insert.jpg" alt="Spacer-mesh infant support insert seated in the bath" loading="lazy"></a>
+      </div>
+
+      <h4 class="gallery-label">Process</h4>
+      <div class="gallery grid3">
+        <a href="Assets/perla-clay.jpg" target="_blank"><img src="Assets/perla-clay.jpg" alt="Clay model of the spiral shell form" loading="lazy"></a>
+        <a href="Assets/perla-cad.jpg" target="_blank"><img src="Assets/perla-cad.jpg" alt="Fusion 360 render of the spiral bath" loading="lazy"></a>
+        <a href="Assets/perla-mockup.jpg" target="_blank"><img src="Assets/perla-mockup.jpg" alt="Full-scale chicken-wire and papier-mâché mock-up" loading="lazy"></a>
+        <a href="Assets/perla-bodystorm.jpg" target="_blank"><img src="Assets/perla-bodystorm.jpg" alt="Body storming the full-scale mock-up while kneeling with a soft toy" loading="lazy"></a>
+        <a href="Assets/perla-drain.jpg" target="_blank"><img src="Assets/perla-drain.jpg" alt="Cardboard prototype of the drain mechanism" loading="lazy"></a>
+        <a href="Assets/perla-evolution.jpg" target="_blank"><img src="Assets/perla-evolution.jpg" alt="Models lined up from clay studies to the papier-mâché mock-up and final bath" loading="lazy"></a>
+      </div>
+    </article>
+    </dialog>
+
+    <!-- ROCKET REVIVE -->
+    <dialog class="proj-modal" id="rocket-revive" aria-label="Rocket Revive">
+    <div class="modal-bar"><button class="modal-close" aria-label="Close">×</button></div>
+    <article class="proj">
+      <div class="proj-top">
+        <div><span class="num">Project 02</span><h2>Rocket Revive</h2></div>
         <div class="proj-tags"><span class="chip">Naloxone</span><span class="chip">Festivals</span><span class="chip">Harm Reduction</span></div>
       </div>
       <div class="proj-cover"><img src="assets/rr-final.jpg" alt="Rocket Revive naloxone carrier, final intervention render"></div>
@@ -69,12 +144,15 @@
       <div style="margin-top:30px">
         <a href="assets/IDN3001IndividualProjectJournalMassiminiZara.pdf" target="_blank" rel="noopener" class="btn btn-ink">Read my individual project journal (PDF)</a>
       </div>
-    </article>-
+    </article>
+    </dialog>
 
     <!-- ADRACARD -->
-    <article class="proj reveal" id="adracard">
+    <dialog class="proj-modal" id="adracard" aria-label="AdraCard">
+    <div class="modal-bar"><button class="modal-close" aria-label="Close">×</button></div>
+    <article class="proj">
       <div class="proj-top">
-        <div><span class="num">Project 02</span><h2>AdraCard</h2></div>
+        <div><span class="num">Project 03</span><h2>AdraCard</h2></div>
         <div class="proj-tags"><span class="chip">Adrenaline</span><span class="chip">Everyday Carry</span><span class="chip">Festival Fashion</span></div>
       </div>
       <div class="proj-cover"><img src="assets/adra-hero.jpg" alt="AdraCard finished tooled-leather adrenaline pouch"></div>
@@ -100,11 +178,14 @@
         <a href="assets/adra-make2.jpg" target="_blank"><img src="assets/adra-make2.jpg" alt="AdraCard prototype detail"></a>
       </div>
     </article>
+    </dialog>
 
     <!-- ANGLE GRINDER -->
-    <article class="proj reveal" id="angle-grinder">
+    <dialog class="proj-modal" id="angle-grinder" aria-label="Fijn Angle Grinder">
+    <div class="modal-bar"><button class="modal-close" aria-label="Close">×</button></div>
+    <article class="proj">
       <div class="proj-top">
-        <div><span class="num">Project 03</span><h2>Fijn Angle Grinder</h2></div>
+        <div><span class="num">Project 04</span><h2>Fijn Angle Grinder</h2></div>
         <div class="proj-tags"><span class="chip">Hand Tools</span><span class="chip">Ergonomics</span><span class="chip">CAD</span></div>
       </div>
       <div class="proj-cover"><img src="assets/grinder-hero.jpg" alt="Fijn angle grinder concept render"></div>
@@ -131,12 +212,13 @@
         <a href="assets/grinder-proto.jpg" target="_blank"><img src="assets/grinder-proto.jpg" alt="Angle grinder prototype form"></a>
       </div>
       <div style="margin-top:14px;border-radius:8px;overflow:hidden;border:1px solid var(--line);background:#000">
-        <video src="assets/angle-grinder.mp4" autoplay muted loop playsinline controls preload="metadata" style="width:100%;display:block"></video>
+        <video src="assets/angle-grinder.mp4" muted loop playsinline controls preload="metadata" style="width:100%;display:block"></video>
       </div>
     </article>
+    </dialog>
 
     <!-- MAKING & MATERIAL STUDIES -->
-    <div class="sec-head reveal" id="making" style="margin-bottom:36px">
+    <div class="sec-head reveal" id="making" style="margin:110px 0 36px">
       <div class="l">
         <span class="num">04 · Making &amp; material studies</span>
         <h2>Hands-on craft<br>&amp; personal work.</h2>
@@ -145,31 +227,41 @@
     </div>
 
     <div class="mini-grid">
-      <div class="mini reveal">
+      <a class="mini reveal" href="#textile">
         <div class="ph"><img src="assets/textile.jpg" alt="Textile fish-scale garment"></div>
-        <div class="tx"><span class="cat">Personal · Textiles</span><div class="t">Textile Experimentation</div><div class="d">A garment built up with sewn discs for a fish-scale effect, solving visible-thread and durability problems with hidden beads and a per-disc threading method.</div></div>
-      </div>
-      <div class="mini reveal d1">
+        <div class="tx"><span class="cat">Personal · Textiles</span><div class="t">Textile Experimentation</div><div class="d">A garment built up with sewn discs for a fish-scale effect, solving visible-thread and durability problems with hidden beads and a per-disc threading method.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal d1" href="#phone-stand">
         <div class="ph"><img src="assets/phonestand.jpg" alt="Extrusion phone stand"></div>
-        <div class="tx"><span class="cat">Personal · Product</span><div class="t">Extrusion Phone Stand</div><div class="d">A snap-on laptop companion so I could keep an eye on the clock or FaceTime while working, iterated through weight and balance problems toward a refined side-mounted design.</div></div>
-      </div>
-      <div class="mini reveal d2">
+        <div class="tx"><span class="cat">Personal · Product</span><div class="t">Extrusion Phone Stand</div><div class="d">A snap-on laptop companion so I could keep an eye on the clock or FaceTime while working, iterated through weight and balance problems toward a refined side-mounted design.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal d2" href="#charcoal">
         <div class="ph"><img src="assets/charcoal.jpg" alt="Charcoal on canvas"></div>
-        <div class="tx"><span class="cat">Personal · Fine art</span><div class="t">Charcoal on Canvas</div><div class="d">Exploring motion and depth in charcoal, layering willow and compressed charcoal over a re-textured gesso surface to create a blurred, dynamic sense of speed.</div></div>
-      </div>
-      <div class="mini reveal">
+        <div class="tx"><span class="cat">Personal · Fine art</span><div class="t">Charcoal on Canvas</div><div class="d">Exploring motion and depth in charcoal, layering willow and compressed charcoal over a re-textured gesso surface to create a blurred, dynamic sense of speed.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal" href="#soma-cube">
         <div class="ph"><img src="assets/soma.jpg" alt="SOMA cube making project"></div>
-        <div class="tx"><span class="cat">Making · Material study</span><div class="t">SOMA Cube</div><div class="d">A single puzzle built four ways (foam, plastic, 3D-printed and wooden pieces) to learn finishing, tolerance and how the same form behaves across materials.</div></div>
-      </div>
-      <div class="mini reveal d1">
+        <div class="tx"><span class="cat">Making · Material study</span><div class="t">SOMA Cube</div><div class="d">A single puzzle built four ways (foam, plastic, 3D-printed and wooden pieces) to learn finishing, tolerance and how the same form behaves across materials.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal d1" href="#photobooth">
         <div class="ph"><img src="assets/photobooth.jpg" alt="Glass and timber photobooth frame"></div>
-        <div class="tx"><span class="cat">Personal · Glass &amp; timber</span><div class="t">Photobooth Strip Frame</div><div class="d">A handmade frame combining cut glass and routed timber, where I learned soldering, the importance of flux, and that a bent paperclip can solve a real functional problem.</div></div>
-      </div>
-      <div class="mini reveal d2">
+        <div class="tx"><span class="cat">Personal · Glass &amp; timber</span><div class="t">Photobooth Strip Frame</div><div class="d">A handmade frame combining cut glass and routed timber, where I learned soldering, the importance of flux, and that a bent paperclip can solve a real functional problem.</div><span class="more">View project</span></div>
+      </a>
+      <a class="mini reveal d2" href="#sketching">
         <div class="ph"><img src="assets/sketching.jpg" alt="Sketching and visualisation"></div>
-        <div class="tx"><span class="cat">Skill · Visualisation</span><div class="t">Sketching &amp; Ideation</div><div class="d">Ongoing exploration of light, glass, hands and ergonomic forms with copic markers, the fast, foundational thinking behind every product I design.</div></div>
-      </div>
+        <div class="tx"><span class="cat">Skill · Visualisation</span><div class="t">Sketching &amp; Ideation</div><div class="d">Ongoing exploration of light, glass, hands and ergonomic forms with copic markers, the fast, foundational thinking behind every product I design.</div><span class="more">View project</span></div>
+      </a>
     </div>
+
+    <!-- Shared pop-up for making & material studies (filled from the clicked card) -->
+    <dialog class="proj-modal" id="mini-modal" aria-label="Project details">
+    <div class="modal-bar"><button class="modal-close" aria-label="Close">×</button></div>
+    <article class="proj mini-detail">
+      <div class="proj-top"><div><span class="num"></span><h2></h2></div></div>
+      <div class="proj-cover"><img src="" alt=""></div>
+      <p class="lead"></p>
+    </article>
+    </dialog>
 
   </div>
 </section>

@@ -51,7 +51,8 @@ h1,h2,h3,h4,.display{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;fon
 .nav{position:sticky;top:0;z-index:100;background:rgba(255,254,254,.82);backdrop-filter:blur(12px);border-bottom:1px solid var(--line-soft)}
 .nav-inner{max-width:var(--maxw);margin:0 auto;padding:20px 30px;display:flex;align-items:center;justify-content:space-between}
 .brand{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;font-size:23px;font-weight:500;letter-spacing:-.01em}
-.brand .dot{color:var(--accent)}
+.brand{display:block;line-height:0}
+.brand img{height:44px;width:auto}
 .nav-links{display:flex;gap:34px;align-items:center}
 .nav-links a{font-size:14px;letter-spacing:.02em;color:var(--ink-soft);font-weight:500;position:relative;padding:3px 0;transition:color .3s}
 .nav-links a::after{content:"";position:absolute;left:0;bottom:-3px;width:0;height:1.5px;background:var(--accent);transition:width .35s var(--ease)}
@@ -74,7 +75,7 @@ h1,h2,h3,h4,.display{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;fon
 /* ---------- hero ---------- */
 .hero{padding:80px 0 40px;position:relative}
 .hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:60px;align-items:end}
-.hero h1{font-size:clamp(50px,8.5vw,116px);letter-spacing:-.02em}
+.hero h1{font-size:clamp(40px,6.8vw,92px);letter-spacing:-.02em}
 .hero h1 .italic{color:var(--accent-soft)}
 .hero-lead{max-width:540px;margin:30px 0 34px}
 .hero-actions{display:flex;gap:14px;flex-wrap:wrap}
@@ -285,3 +286,31 @@ h1,h2,h3,h4,.display{font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;fon
   .index-row{grid-template-columns:34px 1fr;gap:14px}
   .index-row .ca,.index-row .go{display:none}
 }
+
+/* ============ Industrial Design: project cards + pop-ups ============ */
+a.mini{display:block;color:inherit;cursor:pointer}
+.mini .more{display:inline-block;margin-top:14px;font-size:13px;font-weight:600;color:var(--accent);border-bottom:1.5px solid transparent;transition:border-color .3s var(--ease)}
+.mini:hover .more,.mini:focus-visible .more{border-color:var(--accent)}
+.mini:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+.proj-modal{width:min(1100px,calc(100% - 32px));max-width:none;max-height:calc(100dvh - 48px);margin:auto;padding:0;border:1px solid var(--line);border-radius:12px;background:var(--paper);color:var(--ink);overflow:auto;overscroll-behavior:contain;box-shadow:0 40px 90px -40px rgba(58,13,30,.6)}
+.proj-modal::backdrop{background:rgba(58,13,30,.45);backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+.proj-modal[open]{animation:modalIn .4s var(--ease)}
+@keyframes modalIn{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+.proj-modal .proj{margin:0;padding:clamp(24px,4vw,56px)}
+.modal-bar{position:sticky;top:0;height:0;z-index:5;display:flex;justify-content:flex-end;pointer-events:none}
+.modal-close{pointer-events:auto;margin:14px 14px 0 0;width:44px;height:44px;border-radius:50%;border:1px solid var(--line);background:var(--card);color:var(--ink);font-size:26px;line-height:1;cursor:pointer;transition:background .3s var(--ease),color .3s var(--ease)}
+.modal-close:hover{background:var(--ink);color:var(--paper)}
+body:has(.proj-modal[open]){overflow:hidden}
+.mini-detail .proj-cover{aspect-ratio:auto;display:flex;justify-content:center;background:var(--card)}
+.mini-detail .proj-cover img{width:auto;height:auto;max-width:100%;max-height:65vh;object-fit:contain}
+.mini-detail .lead{max-width:720px;color:var(--ink-soft)}
+/* Featured (latest) project card spans the full row */
+.mini.feature{grid-column:1/-1;display:grid;grid-template-columns:1.4fr 1fr;align-items:center}
+.mini.feature .ph{aspect-ratio:1642/918;align-self:stretch;display:flex;align-items:center;background:#d79a80}
+.mini.feature .ph img{height:auto;aspect-ratio:1642/918}
+.mini.feature .tx{padding:clamp(24px,3.5vw,48px)}
+.mini.feature .t{font-size:clamp(28px,3.4vw,42px);line-height:1.1}
+.mini.feature .d{font-size:16px}
+@media(max-width:860px){.mini.feature{grid-template-columns:1fr}}
+.gallery-label{font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:44px 0 -22px}
